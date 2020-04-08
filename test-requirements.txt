@@ -1,0 +1,7 @@
+-r requirements.txt
+celery
+pytest
+pytest-cov
+coveralls
+codeclimate-test-reporter
+coverage

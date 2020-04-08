@@ -1,0 +1,13 @@
+{%- if not skip_cache -%}
+from cachext.exts import Cache
+{% endif %}
+{%- if not skip_celery -%}
+from binwen.contrib.extensions.celery import Celery
+{% endif %}
+
+{% if not skip_cache -%}
+cache = Cache()
+{% endif %}
+{%- if not skip_celery -%}
+celeryapp = Celery()
+{% endif %}
